@@ -1,0 +1,29 @@
+platform :ios,'9.0'
+inhibit_all_warnings!
+target 'WeChat_swift' do
+    pod 'Alamofire'
+    pod 'HandyJSON'
+    pod 'SnapKit'
+    pod 'Starscream'
+    #pod 'libwebp'
+
+    target 'WeChat_swiftTests' do
+      inherit! :search_paths
+      # Pods for testing
+    end
+  
+    target 'WeChat_swiftUITests' do
+      inherit! :search_paths
+      # Pods for testing
+    end
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+ target.build_configurations.each do |config|
+  if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 9.0
+    config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+   end
+  end
+ end
+end

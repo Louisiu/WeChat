@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.8.2)
+  - HandyJSON (5.0.0)
+  - SnapKit (4.2.0)
+  - Starscream (3.1.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - HandyJSON
+  - SnapKit
+  - Starscream
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - HandyJSON
+    - SnapKit
+    - Starscream
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  HandyJSON: 992f2d661716d6a91de82d0056927bc7813b5770
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  Starscream: 08172b481e145289c4930cb567230fb55897cfa4
+
+PODFILE CHECKSUM: 6e6df6e6312fde991d4ec7704e77f2139cf6bf3f
+
+COCOAPODS: 1.7.0
